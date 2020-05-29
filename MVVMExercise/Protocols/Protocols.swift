@@ -34,3 +34,11 @@ protocol ColorDetailViewDelegate: class {
     func setNavigationTitle(_ title:String) -> Void
     func assignBackgroundColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> Void
 }
+
+
+protocol Coordiantor
+{
+    var childCoordinators: [Coordiantor] {get set}
+    var navigationController: UINavigationController {get set}
+    func start()
+}

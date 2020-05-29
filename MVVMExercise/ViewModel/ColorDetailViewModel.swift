@@ -23,8 +23,8 @@ extension ColorDetailViewModel: ViewModel
     func viewDidAppear(_ animated: Bool) {
         if let view = view
         {
-            view.setNavigationTitle(model.name)
-            view.assignBackgroundColor(red: model.red, green: model.green, blue: model.blue, alpha: model.alpha)
+        view.setNavigationTitle(model.name)
+        view.assignBackgroundColor(red: model.red, green: model.green, blue: model.blue, alpha: model.alpha)
         }
     }
     

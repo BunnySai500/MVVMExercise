@@ -10,8 +10,8 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text("Hello, World!")
-    }
+     Text("Hello")
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {

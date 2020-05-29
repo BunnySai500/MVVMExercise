@@ -16,6 +16,10 @@
 		28787E522476CB1900E2300B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28787E512476CB1900E2300B /* Assets.xcassets */; };
 		28787E552476CB1900E2300B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28787E542476CB1900E2300B /* Preview Assets.xcassets */; };
 		28787E582476CB1900E2300B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28787E562476CB1900E2300B /* LaunchScreen.storyboard */; };
+		28DDA92324814B65008D3A19 /* ColorTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDA92224814B65008D3A19 /* ColorTableCell.swift */; };
+		28DDA92524814CE6008D3A19 /* ColorDetailVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDA92424814CE6008D3A19 /* ColorDetailVCViewController.swift */; };
+		28DDA9282481690D008D3A19 /* AppCordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDA9272481690D008D3A19 /* AppCordinators.swift */; };
+		28DDA96124817304008D3A19 /* ColorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDA96024817304008D3A19 /* ColorCoordinator.swift */; };
 		28E96D8C24797C7700C22F2C /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E96D8B24797C7700C22F2C /* ColorModel.swift */; };
 		28E96D8E2479821F00C22F2C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E96D8D2479821F00C22F2C /* Protocols.swift */; };
 		28E96D91247997A400C22F2C /* ColorListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E96D90247997A400C22F2C /* ColorListTableViewModel.swift */; };
@@ -33,6 +37,10 @@
 		28787E542476CB1900E2300B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28787E572476CB1900E2300B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28787E592476CB1900E2300B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DDA92224814B65008D3A19 /* ColorTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableCell.swift; sourceTree = "<group>"; };
+		28DDA92424814CE6008D3A19 /* ColorDetailVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailVCViewController.swift; sourceTree = "<group>"; };
+		28DDA9272481690D008D3A19 /* AppCordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinators.swift; sourceTree = "<group>"; };
+		28DDA96024817304008D3A19 /* ColorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCoordinator.swift; sourceTree = "<group>"; };
 		28E96D8B24797C7700C22F2C /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		28E96D8D2479821F00C22F2C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		28E96D90247997A400C22F2C /* ColorListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorListTableViewModel.swift; sourceTree = "<group>"; };
@@ -68,6 +76,7 @@
 		28787E4A2476CB1800E2300B /* MVVMExercise */ = {
 			isa = PBXGroup;
 			children = (
+				28DDA926248168EF008D3A19 /* Coordinators */,
 				28E96D8F2479977B00C22F2C /* ViewModel */,
 				28E96D8A24797C6200C22F2C /* Model */,
 				28E96D862479778E00C22F2C /* Controllers */,
@@ -91,6 +100,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		28DDA926248168EF008D3A19 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				28DDA9272481690D008D3A19 /* AppCordinators.swift */,
+				28DDA96024817304008D3A19 /* ColorCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		28E96D852479733600C22F2C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				286A0EF6247EC1BF008FCF41 /* ColorListTableTableViewController.swift */,
+				28DDA92224814B65008D3A19 /* ColorTableCell.swift */,
+				28DDA92424814CE6008D3A19 /* ColorDetailVCViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,9 +222,13 @@
 				28E96D8E2479821F00C22F2C /* Protocols.swift in Sources */,
 				286A0EF7247EC1BF008FCF41 /* ColorListTableTableViewController.swift in Sources */,
 				28787E502476CB1800E2300B /* ContentView.swift in Sources */,
+				28DDA92324814B65008D3A19 /* ColorTableCell.swift in Sources */,
 				284CD3DB247A49AF001922A3 /* ColorTableViewCellViewModel.swift in Sources */,
+				28DDA9282481690D008D3A19 /* AppCordinators.swift in Sources */,
+				28DDA96124817304008D3A19 /* ColorCoordinator.swift in Sources */,
 				286A0EF5247EB8A3008FCF41 /* ColorDetailViewModel.swift in Sources */,
 				28E96D8C24797C7700C22F2C /* ColorModel.swift in Sources */,
+				28DDA92524814CE6008D3A19 /* ColorDetailVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
